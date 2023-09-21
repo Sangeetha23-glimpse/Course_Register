@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Registration Form</title>
+<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body style="background-color:rgb(162, 165, 187);">
+<h1>Student Registration Form</h1>
+<form action="Register.php" method="post">
+<div class="a1">
+    <table style="margin-left:auto;margin-right:auto;">
+        <tbody>
+        <tr>
+        <th>REG_NO:</th>
+        <td><input type="number" name="reg_no" required=""></td></tr> 
+        <th>First Name:</th>
+        <td><input type="text" name="fname" required=""></td></tr>
+        <tr><th>Last Name:</th>
+        <td><input type="text" name="lname" required=""></td>
+        <tr><th>Age:</th>
+        <td><input type="number" min="1" max="65" name="age" required=""></td></tr>
+        <tr><th>Date Of Birth:</th>
+          <td><input type="date" name="date" required=""></td></tr>
+        <tr><th>Address:</th>
+       <td><p><textarea name="address" rows="4" cols="25"></textarea></p></td></tr></tr>
+    <tr><th>Gender:</th>
+        <td><input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female" required="">Female</td></tr>
+    <tr> <th>E-mail:</th>
+        <td><input type="email" name="email" required=""></td></tr>
+<tr><th>Phone No:</th>
+    <td><input type="value" name="number" required=""></td></tr>
+<tr><th>Education:-</th>
+    <td><select name="Education" required="">
+        <option value="select" required="">Choose education</option>
+        <option value="sslc">SSLC</option>
+        <option value="puc">PUC</option>
+        <option value="Bsc">BSC</option>
+        <option value="Bca">BCA</option>
+        <option value="Btech">B.Tech</option>
+        <option value="Msc">MSC</option>
+        <option value="Mca">MCA</option>
+        <option value="Mtech">M.Tech</option>
+        </select></td></tr>
+                <tr><th>Choose course:</th>
+                    <td><select name="Program" required="">
+                        <option value="select" required="">Choose Course</option>
+                        <option value="JAVA DEVELOPER">JAVA DEVELOPER</option>
+                        <option value="WEB DEVELOPER">WEB DEVELOPER</option>
+                        <option value="FRONTED DEVELOPER">FRONTEND DEVELOPER</option>
+                        <option value="MACHINE LEARNING">MACHINE LEARNING</option>
+                        </select></td></tr>
+    </tbody>
+</table>        
+</div>
+ 
+<input type="submit" name="submit">
+<div class="container">
+<b><u>Note:</u></b>-  User Should Fill all field without fail, Leaving the mandotory fields
+will cause as non submission of the form.
+</div>
+</body>
+</html>
